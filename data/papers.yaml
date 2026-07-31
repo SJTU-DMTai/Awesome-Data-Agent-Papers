@@ -1955,3 +1955,11 @@
   year: 2026
   paper: https://arxiv.org/pdf/2604.08801
   category: foundations
+
+- title: "Large Language Models as Optimizers"
+  authors: Xinyun Chen  # TODO verify corresponding author
+  venue: ICLR'23
+  year: 2023
+  paper: https://arxiv.org/pdf/2309.03409
+  code: https://github.com/google-deepmind/opro  # auto-detected from abstract, please verify
+  category: foundations
