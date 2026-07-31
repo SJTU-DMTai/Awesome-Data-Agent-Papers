@@ -170,6 +170,10 @@ def main():
             set_output("error", "auto-classify needs an LLM key (DEEPSEEK_API_KEY secret); "
                                 "please pick a category in the form and re-open.")
             return 1
+        except Exception as exc:
+            set_output("error", f"auto-classify failed: {type(exc).__name__}: {exc}. "
+                                "Please edit the issue to retry, or choose an explicit category.")
+            return 1
         auto_routed = kind != "paper"
         cat_note = (f"category: `{category}` (auto-classified)" if kind == "paper"
                     else f"auto-detected as a **{kind}**")

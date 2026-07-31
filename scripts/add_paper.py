@@ -14,6 +14,7 @@ The corresponding author is not available from arXiv, so the last author is used
 TODO marker — please verify it before committing.
 """
 import argparse
+import json
 import re
 import sys
 import urllib.request
@@ -86,7 +87,7 @@ def insert_paper(aid, category, tags=(), code=None, venue=None, use_web=True):
 
     lines = [
         "",
-        f'- title: "{meta["title"]}"',
+        f"- title: {json.dumps(meta['title'], ensure_ascii=False)}",
         f"  authors: {meta['authors'][-1]}  # TODO verify corresponding author",
         f"  venue: {venue}" + ("  # TODO verify venue" if venue_todo else ""),
         f"  year: {year}",

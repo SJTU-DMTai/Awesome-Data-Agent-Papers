@@ -20,6 +20,7 @@ import difflib
 import json
 import subprocess
 import sys
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -58,7 +59,12 @@ def _arxiv_query(q, title):
            + urllib.parse.quote(q) + "&max_results=10")
     import re
     try:
-        root = ET.fromstring(fetch(url))
+        payload = fetch(url)
+        # arXiv asks API clients to leave three seconds between requests.  Title
+        # resolution is often followed immediately by metadata enrichment, so
+        # wait here before allowing the next request to start.
+        time.sleep(3)
+        root = ET.fromstring(payload)
     except Exception:
         return None
     best = None
