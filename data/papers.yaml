@@ -1970,3 +1970,10 @@
   year: 2026
   paper: https://arxiv.org/pdf/2604.17937
   category: foundations
+
+- title: "Understanding the Challenges in Iterative Generative Optimization with LLMs"
+  authors: Ching-An Cheng  # TODO verify corresponding author
+  venue: arXiv'26.03  # TODO verify venue
+  year: 2026
+  paper: https://arxiv.org/pdf/2603.23994
+  category: foundations
