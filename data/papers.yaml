@@ -1948,3 +1948,10 @@
   year: 2024
   paper: https://arxiv.org/pdf/2406.07496
   category: foundations
+
+- title: "$p1$: Better Prompt Optimization with Fewer Prompts"
+  authors: Wen Sun  # TODO verify corresponding author
+  venue: arXiv'26.04  # TODO verify venue
+  year: 2026
+  paper: https://arxiv.org/pdf/2604.08801
+  category: foundations
