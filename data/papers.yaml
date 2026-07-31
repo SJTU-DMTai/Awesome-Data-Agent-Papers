@@ -1941,3 +1941,10 @@
   year: 2024
   paper: https://arxiv.org/pdf/2406.11695
   category: foundations
+
+- title: "TextGrad: Automatic \"Differentiation\" via Text"
+  authors: James Zou  # TODO verify corresponding author
+  venue: arXiv'24.06  # TODO verify venue
+  year: 2024
+  paper: https://arxiv.org/pdf/2406.07496
+  category: foundations
