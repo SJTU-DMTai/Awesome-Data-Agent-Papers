@@ -1963,3 +1963,10 @@
   paper: https://arxiv.org/pdf/2309.03409
   code: https://github.com/google-deepmind/opro  # auto-detected from abstract, please verify
   category: foundations
+
+- title: "ContraPrompt: Contrastive Prompt Optimization via Dyadic Reasoning Trace Analysis"
+  authors: Pushpendre Rastogi  # TODO verify corresponding author
+  venue: ICLR'26
+  year: 2026
+  paper: https://arxiv.org/pdf/2604.17937
+  category: foundations
