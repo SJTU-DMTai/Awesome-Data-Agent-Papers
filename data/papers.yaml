@@ -1977,3 +1977,10 @@
   year: 2026
   paper: https://arxiv.org/pdf/2603.23994
   category: foundations
+
+- title: "SDE-SQL: Enhancing Text-to-SQL Generation in Large Language Models via Self-Driven Exploration with SQL Probes"
+  authors: Wenhao Jiang  # TODO verify corresponding author
+  venue: ACL'25
+  year: 2025
+  paper: https://arxiv.org/pdf/2506.07245
+  category: nl2sql
